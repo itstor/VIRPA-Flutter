@@ -13,11 +13,6 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    EasyLoading.instance
-      ..userInteractions = false
-      ..indicatorType = EasyLoadingIndicatorType.ring
-      ..dismissOnTap = false;
-
     return FlutterEasyLoading(
         child: Scaffold(
       resizeToAvoidBottomInset: false,

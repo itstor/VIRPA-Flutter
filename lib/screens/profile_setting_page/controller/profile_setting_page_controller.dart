@@ -4,14 +4,15 @@ import 'package:get/get.dart';
 import 'package:virpa/constants/firebase_constant.dart';
 import 'package:virpa/data/enum/gender_enum.dart';
 import 'package:virpa/data/model/user_model.dart';
+import 'package:virpa/screens/home_page/home_page.dart';
 import 'package:virpa/services/user_service.dart';
 
 class ProfileSettingPageController extends GetxController {
   final _userService = Get.find<UserService>();
-  final formKey = GlobalKey<FormState>();
   Rx<Gender> gender = Rx(Gender.L);
   TextEditingController nameTextController = TextEditingController();
   String? dateOfBirth;
+  bool firstTime = false;
 
   @override
   void onInit() {
@@ -24,6 +25,10 @@ class ProfileSettingPageController extends GetxController {
     dateOfBirth = passedArguments?['dateOfBirth'] != null
         ? (passedArguments?['dateOfBirth'] as DateTime).toLocal().toString()
         : '';
+
+    if (dateOfBirth == '') {
+      firstTime = true;
+    }
   }
 
   ValueChanged<Gender?> genderOnChange() {
@@ -46,6 +51,10 @@ class ProfileSettingPageController extends GetxController {
       await _userService.updateProfile(auth.currentUser!.uid, data);
 
       Get.snackbar("Berhasil", "Profile berhasil disimpan");
+
+      if (firstTime) {
+        Get.offAllNamed(HomePage.routeName);
+      }
     } catch (e) {
       Get.snackbar("Error", e.toString().substring(11));
     } finally {

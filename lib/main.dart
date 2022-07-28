@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:virpa/controller/auth_controller.dart';
 import 'package:virpa/firebase_options.dart';
@@ -23,6 +24,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    EasyLoading.instance
+      ..userInteractions = false
+      ..indicatorType = EasyLoadingIndicatorType.ring
+      ..dismissOnTap = false;
+
     return GetMaterialApp(
       title: 'VIRPA',
       theme: ThemeData(

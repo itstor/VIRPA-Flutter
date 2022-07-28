@@ -39,7 +39,9 @@ class UserModel {
       'gender': gender,
       'dateOfBirth': dateOfBirth,
       'headSize': headSize,
-      'headSizeStatus': headSizeStatus.toString()
+      'headSizeStatus': headSizeStatus == null
+          ? null
+          : headSizeStatus.toString().split('.')[1]
     };
   }
 
@@ -51,7 +53,7 @@ class UserModel {
       name: doc.get('name'),
       gender: doc.get('gender') == "Laki-laki" ? Gender.L : Gender.P,
       dateOfBirth: (doc.get('dateOfBirth') as Timestamp).toDate(),
-      headSize: (doc.get('headSize') as int).toDouble(),
+      headSize: doc.get('headSize'),
       headSizeStatus: HeadSizeStatus.values.firstWhere(
           (e) => e.toString() == "HeadSizeStatus.${doc.get('headSizeStatus')}"),
     );

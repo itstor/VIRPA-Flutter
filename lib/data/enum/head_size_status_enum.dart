@@ -1,7 +1,8 @@
 enum HeadSizeStatus {
   underNormal,
   normal,
-  aboveNormal;
+  aboveNormal,
+  nullValue;
 
   String get displayName {
     switch (this) {
@@ -11,6 +12,8 @@ enum HeadSizeStatus {
         return "Normal";
       case HeadSizeStatus.aboveNormal:
         return "Above Normal";
+      case nullValue:
+        return "null";
     }
   }
 }

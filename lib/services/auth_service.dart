@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:virpa/constants/firebase_constant.dart';
+import 'package:virpa/data/enum/head_size_status_enum.dart';
 import 'package:virpa/data/model/user_model.dart';
 
 class AuthService {
@@ -59,6 +60,8 @@ class AuthService {
             dateOfBirth: null,
             gender: null,
             name: null,
+            headSize: 0,
+            headSizeStatus: HeadSizeStatus.nullValue,
           ).toMap()
             ..['createdAt'] = FieldValue.serverTimestamp())
           .then((value) {
