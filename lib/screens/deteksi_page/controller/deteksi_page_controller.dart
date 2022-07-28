@@ -16,7 +16,6 @@ import 'package:virpa/services/growth_service.dart';
 import 'package:virpa/services/height_status_getter_service.dart';
 import 'package:virpa/services/user_service.dart';
 import 'package:virpa/services/weight_status_getter_service.dart';
-import 'package:virpa/utils/image_processor.dart';
 import 'package:virpa/utils/utils.dart';
 
 class DeteksiPageController extends GetxController {

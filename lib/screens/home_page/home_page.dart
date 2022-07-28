@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:virpa/screens/camera_page/camera_page.dart';
 import 'package:virpa/screens/deteksi_page/deteksi_page.dart';
 import 'package:virpa/screens/growth_history_page/growth_history_page.dart';
 import 'package:virpa/screens/home_page/controller/home_page_controller.dart';

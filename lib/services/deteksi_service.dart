@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:virpa/constants/api_constant.dart';
-import 'package:virpa/constants/firebase_constant.dart';
 import 'package:virpa/data/enum/gender_enum.dart';
 import 'package:virpa/data/model/front_detection_model.dart';
 import 'package:virpa/data/model/head_detection_model.dart';
