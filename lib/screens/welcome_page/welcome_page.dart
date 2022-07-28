@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:virpa/screens/login_page/login_page.dart';
-import 'package:virpa/screens/register_page/register_page.dart';
+import 'package:Virpa/screens/login_page/login_page.dart';
+import 'package:Virpa/screens/register_page/register_page.dart';
 
 class WelcomePage extends StatelessWidget {
   static String routeName = '/welcome-page';

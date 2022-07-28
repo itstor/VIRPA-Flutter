@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:lazy_load_indexed_stack/lazy_load_indexed_stack.dart';
-import 'package:virpa/screens/deteksi_page/controller/deteksi_page_controller.dart';
-import 'package:virpa/screens/deteksi_page/section/hasil_front_body_section.dart';
-import 'package:virpa/screens/deteksi_page/section/hasil_lingkar_kepala_section.dart';
-import 'package:virpa/screens/deteksi_page/section/hasil_side_body_section.dart';
-import 'package:virpa/screens/deteksi_page/section/summary_deteksi_section.dart';
-import 'package:virpa/screens/deteksi_page/section/tutorial_section.dart';
+import 'package:Virpa/screens/deteksi_page/controller/deteksi_page_controller.dart';
+import 'package:Virpa/screens/deteksi_page/section/hasil_front_body_section.dart';
+import 'package:Virpa/screens/deteksi_page/section/hasil_lingkar_kepala_section.dart';
+import 'package:Virpa/screens/deteksi_page/section/hasil_side_body_section.dart';
+import 'package:Virpa/screens/deteksi_page/section/summary_deteksi_section.dart';
+import 'package:Virpa/screens/deteksi_page/section/tutorial_section.dart';
 
 class DeteksiPage extends StatelessWidget {
   static String routeName = '/deteksi';

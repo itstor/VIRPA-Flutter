@@ -2,21 +2,21 @@ import 'dart:io';
 import 'package:camera/camera.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:virpa/constants/firebase_constant.dart';
-import 'package:virpa/data/model/front_detection_model.dart';
-import 'package:virpa/data/model/growth_model.dart';
-import 'package:virpa/data/model/head_detection_model.dart';
-import 'package:virpa/data/model/side_detection_model.dart';
-import 'package:virpa/data/model/user_model.dart';
-import 'package:virpa/screens/camera_page/camera_page.dart';
-import 'package:virpa/screens/home_page/home_page.dart';
-import 'package:virpa/services/deteksi_service.dart';
-import 'package:virpa/services/firebase_storage_service.dart';
-import 'package:virpa/services/growth_service.dart';
-import 'package:virpa/services/height_status_getter_service.dart';
-import 'package:virpa/services/user_service.dart';
-import 'package:virpa/services/weight_status_getter_service.dart';
-import 'package:virpa/utils/utils.dart';
+import 'package:Virpa/constants/firebase_constant.dart';
+import 'package:Virpa/data/model/front_detection_model.dart';
+import 'package:Virpa/data/model/growth_model.dart';
+import 'package:Virpa/data/model/head_detection_model.dart';
+import 'package:Virpa/data/model/side_detection_model.dart';
+import 'package:Virpa/data/model/user_model.dart';
+import 'package:Virpa/screens/camera_page/camera_page.dart';
+import 'package:Virpa/screens/home_page/home_page.dart';
+import 'package:Virpa/services/deteksi_service.dart';
+import 'package:Virpa/services/firebase_storage_service.dart';
+import 'package:Virpa/services/growth_service.dart';
+import 'package:Virpa/services/height_status_getter_service.dart';
+import 'package:Virpa/services/user_service.dart';
+import 'package:Virpa/services/weight_status_getter_service.dart';
+import 'package:Virpa/utils/utils.dart';
 
 class DeteksiPageController extends GetxController {
   final firestorageService = Get.find<FirebaseStorageService>();
@@ -187,9 +187,23 @@ class DeteksiPageController extends GetxController {
       (value) {
         processedData["growthID"] = value.id;
         growthService.sendData(processedData).then((_) {
-          Get.snackbar("Berhasil", "Data berhasil dikirim");
-          EasyLoading.dismiss();
-          Get.offAllNamed(HomePage.routeName);
+          userService
+              .updateProfile(
+                  auth.currentUser!.uid,
+                  UserModel(
+                    headSize: hasilDeteksiKepala.headSize,
+                    headSizeStatus: hasilDeteksiKepala.status,
+                  ))
+              .then((value) {
+            Get.snackbar("Berhasil", "Data berhasil dikirim");
+            EasyLoading.dismiss();
+            Get.offAllNamed(HomePage.routeName);
+          }).catchError(
+            (e) {
+              Get.snackbar("Gagal", "Data gagal dikirim");
+              EasyLoading.dismiss();
+            },
+          );
         }).catchError(
           (e) {
             Get.snackbar("Gagal", "Data gagal dikirim");

@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:virpa/screens/camera_page/controller/camera_page_controller.dart';
+import 'package:Virpa/screens/camera_page/controller/camera_page_controller.dart';
 
 class CameraPage extends StatelessWidget {
   static String routeName = '/camera';

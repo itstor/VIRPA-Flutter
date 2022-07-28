@@ -2,11 +2,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:virpa/controller/auth_controller.dart';
-import 'package:virpa/firebase_options.dart';
-import 'package:virpa/screens/routes/routes.dart';
-import 'package:virpa/screens/splash_screen/splash_screen.dart';
-import 'package:virpa/services/auth_service.dart';
+import 'package:Virpa/controller/auth_controller.dart';
+import 'package:Virpa/firebase_options.dart';
+import 'package:Virpa/screens/routes/routes.dart';
+import 'package:Virpa/screens/splash_screen/splash_screen.dart';
+import 'package:Virpa/services/auth_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

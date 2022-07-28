@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:virpa/data/enum/gender_enum.dart';
-import 'package:virpa/data/model/user_model.dart';
-import 'package:virpa/screens/profile_setting_page/profile_setting_page.dart';
-import 'package:virpa/screens/profile_view_page.dart/controller/profile_view_page_controller.dart';
-import 'package:virpa/utils/Utils.dart';
+import 'package:Virpa/data/enum/gender_enum.dart';
+import 'package:Virpa/data/model/user_model.dart';
+import 'package:Virpa/screens/profile_setting_page/profile_setting_page.dart';
+import 'package:Virpa/screens/profile_view_page.dart/controller/profile_view_page_controller.dart';
+import 'package:Virpa/utils/Utils.dart';
 
 class ProfileViewPage extends StatelessWidget {
   static const routeName = '/profile-view';

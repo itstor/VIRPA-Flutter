@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dio/dio.dart';
-import 'package:virpa/constants/api_constant.dart';
-import 'package:virpa/constants/firebase_constant.dart';
-import 'package:virpa/data/model/growth_model.dart';
+import 'package:Virpa/constants/api_constant.dart';
+import 'package:Virpa/constants/firebase_constant.dart';
+import 'package:Virpa/data/model/growth_model.dart';
 
 class GrowthService {
   final Dio _dio = Dio();

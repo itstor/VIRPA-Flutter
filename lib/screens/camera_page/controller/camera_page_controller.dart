@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:camera/camera.dart';
-import 'package:virpa/utils/image_processor.dart';
+import 'package:Virpa/utils/image_processor.dart';
 
 class CameraPageController extends GetxController {
   late List<CameraDescription> _cameras;

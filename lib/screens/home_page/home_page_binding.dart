@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:virpa/screens/home_page/controller/home_page_controller.dart';
-import 'package:virpa/services/auth_service.dart';
+import 'package:Virpa/screens/home_page/controller/home_page_controller.dart';
+import 'package:Virpa/services/auth_service.dart';
 
 class HomePageBinding implements Bindings {
   @override

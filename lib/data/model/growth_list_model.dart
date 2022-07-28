@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:virpa/data/model/growth_model.dart';
+import 'package:Virpa/data/model/growth_model.dart';
 
 class GrowthListModel {
   List<GrowthModel>? growths;

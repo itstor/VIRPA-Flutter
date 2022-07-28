@@ -1,12 +1,12 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:virpa/constants/api_constant.dart';
-import 'package:virpa/data/enum/gender_enum.dart';
-import 'package:virpa/data/model/front_detection_model.dart';
-import 'package:virpa/data/model/head_detection_model.dart';
-import 'package:virpa/data/model/side_detection_model.dart';
-import 'package:virpa/utils/utils.dart';
+import 'package:Virpa/constants/api_constant.dart';
+import 'package:Virpa/data/enum/gender_enum.dart';
+import 'package:Virpa/data/model/front_detection_model.dart';
+import 'package:Virpa/data/model/head_detection_model.dart';
+import 'package:Virpa/data/model/side_detection_model.dart';
+import 'package:Virpa/utils/utils.dart';
 
 class DeteksiService {
   final Dio _dio = Dio();

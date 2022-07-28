@@ -1,5 +1,5 @@
-import 'package:virpa/constants/firebase_constant.dart';
-import 'package:virpa/data/model/user_model.dart';
+import 'package:Virpa/constants/firebase_constant.dart';
+import 'package:Virpa/data/model/user_model.dart';
 
 class UserService {
   Future<void> updateProfile(String uid, UserModel data) {

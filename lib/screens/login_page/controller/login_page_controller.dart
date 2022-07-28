@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:virpa/services/auth_service.dart';
+import 'package:Virpa/services/auth_service.dart';
 
 class LoginPageController extends GetxController {
   final authService = Get.find<AuthService>();

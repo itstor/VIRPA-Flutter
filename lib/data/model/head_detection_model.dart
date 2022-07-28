@@ -1,5 +1,5 @@
-import 'package:virpa/data/enum/head_size_status_enum.dart';
-import 'package:virpa/services/api_convert.dart';
+import 'package:Virpa/data/enum/head_size_status_enum.dart';
+import 'package:Virpa/services/api_convert.dart';
 
 class HeadDetectionModel {
   double? headSize;
