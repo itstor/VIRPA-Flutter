@@ -53,7 +53,7 @@ class UserModel {
       name: doc.get('name'),
       gender: doc.get('gender') == "Laki-laki" ? Gender.L : Gender.P,
       dateOfBirth: (doc.get('dateOfBirth') as Timestamp).toDate(),
-      headSize: doc.get('headSize'),
+      headSize: doc.get('headSize').toDouble(),
       headSizeStatus: HeadSizeStatus.values.firstWhere(
           (e) => e.toString() == "HeadSizeStatus.${doc.get('headSizeStatus')}"),
     );

@@ -197,7 +197,7 @@ class DeteksiPageController extends GetxController {
               .then((value) {
             Get.snackbar("Berhasil", "Data berhasil dikirim");
             EasyLoading.dismiss();
-            Get.offAllNamed(HomePage.routeName);
+            // Get.offAllNamed(HomePage.routeName);
           }).catchError(
             (e) {
               Get.snackbar("Gagal", "Data gagal dikirim");

@@ -20,7 +20,7 @@ class GrowthHistoryPage extends StatelessWidget {
         foregroundColor: Colors.black,
         title: const Text('Pertumbuhan Balita'),
       ),
-      body: FutureBuilder<List<GrowthModel>>(
+      body: FutureBuilder<Map<String, dynamic>>(
         future: _controller.getData(),
         builder: (context, profileSnap) {
           if (profileSnap.connectionState == ConnectionState.waiting) {
@@ -46,7 +46,7 @@ class GrowthHistoryPage extends StatelessWidget {
 
           return ListView(
             children: [
-              for (GrowthModel growth in profileSnap.data!)
+              for (GrowthModel growth in profileSnap.data!['growth'])
                 Container(
                   decoration: BoxDecoration(
                       border: Border.all(
@@ -64,7 +64,7 @@ class GrowthHistoryPage extends StatelessWidget {
                           children: [
                             const Text("Umur: "),
                             Text(
-                                "${Utils.calculateAgeMonth(growth.takenDate!)} bulan"),
+                                "${Utils.calculateAgeMonth(profileSnap.data!['user'].dateOfBirth)} bulan"),
                           ]),
                       Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,

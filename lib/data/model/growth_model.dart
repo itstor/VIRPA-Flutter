@@ -58,7 +58,7 @@ class GrowthModel {
           orElse: () => HeightStatus.normal),
       weight: doc.get('weight'),
       height: doc.get('height'),
-      headSize: doc.get('headSize'),
+      headSize: doc.get('headSize').toDouble(),
       headSizeStatus: HeadSizeStatus.values.firstWhere(
           (e) => e.toString() == "HeadSizeStatus.${doc.get('headSizeStatus')}",
           orElse: () => HeadSizeStatus.normal),
