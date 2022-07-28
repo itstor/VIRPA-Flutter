@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "117902734190",
+    "project_id": "virpa-7ecb4",
+    "storage_bucket": "virpa-7ecb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117902734190:android:89279cf99e6a01a655c77f",
+        "android_client_info": {
+          "package_name": "com.example.nyobavirpa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117902734190-gnnhibomdsf7vsp1ot80l7cg6u54m2qk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvxApUE1OGFKMNTXRYB_zz0D5-7RlaQ28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117902734190-gnnhibomdsf7vsp1ot80l7cg6u54m2qk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117902734190:android:96630617847ad3a455c77f",
+        "android_client_info": {
+          "package_name": "com.example.virpa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117902734190-gnnhibomdsf7vsp1ot80l7cg6u54m2qk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvxApUE1OGFKMNTXRYB_zz0D5-7RlaQ28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117902734190-gnnhibomdsf7vsp1ot80l7cg6u54m2qk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
