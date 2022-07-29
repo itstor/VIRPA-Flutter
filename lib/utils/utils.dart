@@ -1,10 +1,11 @@
 import "dart:math" show pi;
 
 class Utils {
-  static int calculateAgeMonth(DateTime date) {
-    DateTime now = DateTime.now();
-    int age = now.year - date.year;
-    int month = now.month - date.month;
+  static int calculateAgeMonth(DateTime date, {DateTime? toDate}) {
+    toDate ??= DateTime.now();
+
+    int age = toDate.year - date.year;
+    int month = toDate.month - date.month;
     if (month < 0) {
       age--;
     }

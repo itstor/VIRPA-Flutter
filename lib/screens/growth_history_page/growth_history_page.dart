@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Virpa/data/model/growth_model.dart';
-import 'package:Virpa/screens/growth_history_page/controller/growth_history_page_controller.dart';
-import 'package:Virpa/utils/Utils.dart';
+import 'package:virpa/data/model/growth_model.dart';
+import 'package:virpa/screens/growth_history_page/controller/growth_history_page_controller.dart';
+import 'package:virpa/utils/Utils.dart';
 
 class GrowthHistoryPage extends StatelessWidget {
   static String routeName = '/growth-history';
@@ -64,7 +64,7 @@ class GrowthHistoryPage extends StatelessWidget {
                           children: [
                             const Text("Umur: "),
                             Text(
-                                "${Utils.calculateAgeMonth(profileSnap.data!['user'].dateOfBirth)} bulan"),
+                                "${Utils.calculateAgeMonth(profileSnap.data!['user'].dateOfBirth, toDate: growth.takenDate)} bulan"),
                           ]),
                       Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
