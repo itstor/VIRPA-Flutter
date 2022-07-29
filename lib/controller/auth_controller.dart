@@ -1,10 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import 'package:Virpa/constants/firebase_constant.dart';
-import 'package:Virpa/screens/home_page/home_page.dart';
-import 'package:Virpa/screens/profile_setting_page/profile_setting_page.dart';
-import 'package:Virpa/screens/welcome_page/welcome_page.dart';
-import 'package:Virpa/services/auth_service.dart';
+import 'package:virpa/constants/firebase_constant.dart';
+import 'package:virpa/screens/home_page/home_page.dart';
+import 'package:virpa/screens/profile_setting_page/profile_setting_page.dart';
+import 'package:virpa/screens/welcome_page/welcome_page.dart';
+import 'package:virpa/services/auth_service.dart';
 
 class AuthController extends GetxController {
   static AuthController instance = Get.find();

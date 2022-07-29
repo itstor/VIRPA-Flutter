@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:Virpa/constants/firebase_constant.dart';
-import 'package:Virpa/data/enum/head_size_status_enum.dart';
-import 'package:Virpa/data/model/user_model.dart';
+import 'package:virpa/constants/firebase_constant.dart';
+import 'package:virpa/data/enum/head_size_status_enum.dart';
+import 'package:virpa/data/model/user_model.dart';
 
 class AuthService {
   CollectionReference users = firebaseFirestore.collection('users');

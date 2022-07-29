@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Virpa/screens/deteksi_page/deteksi_page.dart';
-import 'package:Virpa/screens/growth_history_page/growth_history_page.dart';
-import 'package:Virpa/screens/home_page/controller/home_page_controller.dart';
-import 'package:Virpa/screens/profile_view_page.dart/profile_view_page.dart';
+import 'package:virpa/screens/deteksi_page/deteksi_page.dart';
+import 'package:virpa/screens/growth_history_page/growth_history_page.dart';
+import 'package:virpa/screens/home_page/controller/home_page_controller.dart';
+import 'package:virpa/screens/profile_view_page.dart/profile_view_page.dart';
 
 class HomePage extends StatelessWidget {
   static String routeName = '/home-page';

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:Virpa/constants/firebase_constant.dart';
-import 'package:Virpa/data/enum/gender_enum.dart';
-import 'package:Virpa/data/model/user_model.dart';
-import 'package:Virpa/screens/home_page/home_page.dart';
-import 'package:Virpa/services/user_service.dart';
+import 'package:virpa/constants/firebase_constant.dart';
+import 'package:virpa/data/enum/gender_enum.dart';
+import 'package:virpa/data/model/user_model.dart';
+import 'package:virpa/screens/home_page/home_page.dart';
+import 'package:virpa/services/user_service.dart';
 
 class ProfileSettingPageController extends GetxController {
   final _userService = Get.find<UserService>();

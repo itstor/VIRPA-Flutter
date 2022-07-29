@@ -1,4 +1,4 @@
-import 'package:Virpa/data/enum/head_size_status_enum.dart';
+import 'package:virpa/data/enum/head_size_status_enum.dart';
 
 class ApiConvert {
   static HeadSizeStatus getHeadSizeStatus(String status) {

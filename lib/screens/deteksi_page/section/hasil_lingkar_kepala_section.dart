@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Virpa/screens/deteksi_page/controller/deteksi_page_controller.dart';
+import 'package:virpa/screens/deteksi_page/controller/deteksi_page_controller.dart';
 
 class HasilLingkarKepalaSection extends StatelessWidget {
   final _controller = Get.find<DeteksiPageController>();

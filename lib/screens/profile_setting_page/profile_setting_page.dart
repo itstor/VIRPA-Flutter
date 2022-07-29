@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:date_time_picker/date_time_picker.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:Virpa/data/enum/gender_enum.dart';
-import 'package:Virpa/screens/global_components/custom_radio_options.dart';
-import 'package:Virpa/screens/profile_setting_page/controller/profile_setting_page_controller.dart';
+import 'package:virpa/data/enum/gender_enum.dart';
+import 'package:virpa/screens/global_components/custom_radio_options.dart';
+import 'package:virpa/screens/profile_setting_page/controller/profile_setting_page_controller.dart';
 
 class ProfileSettingPage extends StatelessWidget {
   static String routeName = '/profile-setting-page';

@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:Virpa/data/enum/gender_enum.dart';
-import 'package:Virpa/data/enum/head_size_status_enum.dart';
+import 'package:virpa/data/enum/gender_enum.dart';
+import 'package:virpa/data/enum/head_size_status_enum.dart';
 
 class UserModel {
   String? uid;

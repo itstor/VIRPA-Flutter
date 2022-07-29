@@ -1,5 +1,5 @@
-import 'package:Virpa/data/enum/gender_enum.dart';
-import 'package:Virpa/data/enum/height_status_enum.dart';
+import 'package:virpa/data/enum/gender_enum.dart';
+import 'package:virpa/data/enum/height_status_enum.dart';
 
 HeightStatus heightStatusGetter({
   required double height,

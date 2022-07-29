@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:Virpa/screens/profile_setting_page/controller/profile_setting_page_controller.dart';
-import 'package:Virpa/services/user_service.dart';
+import 'package:virpa/screens/profile_setting_page/controller/profile_setting_page_controller.dart';
+import 'package:virpa/services/user_service.dart';
 
 class ProfileSettingPageBinding implements Bindings {
   @override

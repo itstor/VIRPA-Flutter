@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:Virpa/constants/firebase_constant.dart';
-import 'package:Virpa/utils/utils.dart';
+import 'package:virpa/constants/firebase_constant.dart';
+import 'package:virpa/utils/utils.dart';
 
 class FirebaseStorageService {
   Future<String?> uploadImage(File image, String type, String id) async {

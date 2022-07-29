@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:Virpa/data/enum/head_size_status_enum.dart';
-import 'package:Virpa/data/enum/height_status_enum.dart';
-import 'package:Virpa/data/enum/weight_status_enum.dart';
+import 'package:virpa/data/enum/head_size_status_enum.dart';
+import 'package:virpa/data/enum/height_status_enum.dart';
+import 'package:virpa/data/enum/weight_status_enum.dart';
 
 class GrowthModel {
   DateTime? takenDate;
